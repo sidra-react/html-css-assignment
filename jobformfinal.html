@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Data Display</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+h1 {
+    text-align: center;
+}
+  form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group textarea,
+    .form-group input[type="file"] {
+      width: calc(100% - 10px);
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .form-group textarea {
+      height: 100px;
+    }
+
+    .form-group button[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .form-group button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+<h1>Job Application Form</h1>
+  <form id="dataForm">
+    <h1>Personal Information</h1>
+     <div class="form-group">
+      <label for="field1">First Name:</label>
+      <input type="text" id="field1" name="field1" required>
+    </div>
+    <div class="form-group">
+      <label for="field2">Last Name:</label>
+      <input type="text" id="field2" name="field2" required>
+    </div>
+    <div class="form-group">
+      <label for="field3">Phone Number:</label>
+      <input type="text" id="field3" name="field3" required>
+    </div>
+    <div class="form-group">
+      <label for="field4">email:</label>
+      <input type="text" id="field4" name="field4" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+    </div>
+    <div class="form-group">
+      <label for="coverLetter">Cover Letter:</label>
+      <textarea id="coverLetter" name="coverLetter" rows="4" required></textarea>
+    </div>
+ <div class="form-group">
+      <label for="field6">Street:</label>
+      <input type="text" id="field6" name="field6" required>
+    </div>
+<div class="form-group">
+      <label for="field7">Zip code:</label>
+      <input type="text" id="field7" name="field7" required>
+    </div>
+<h1>Education History</h1>
+<div class="form-group">
+      <label for="field8">Highest Level of Education Attained:</label>
+      <input type="text" id="field8" name="field8" required>
+    </div>
+<div class="form-group">
+      <label for="field9">Name of School/University:</label>
+      <input type="text" id="field9" name="field9" required>
+    </div>
+<div class="form-group">
+      <label for="field10">Major/Area of Study:</label>
+      <input type="text" id="field10" name="field10" required>
+    </div>
+<div class="form-group">
+      <label for="field11">Graduation Year:</label>
+      <input type="text" id="field11" name="field11" required>
+    </div>
+
+
+<div class="form-group">
+      <label for="field14">Company Name:</label>
+      <input type="text" id="field14" name="field14" required>
+    </div>
+<div class="form-group">
+      <label for="field15">Employment Date:</label>
+      <input type="text" id="field15" name="field15" required>
+    </div>
+<div class="form-group">
+      <label for="field16">job responsibilities:</label>
+      <input type="text" id="field16" name="field16" required>
+    </div>
+ <div class="form-group">
+      <label for="certificate">Upload certificates:</label>
+      <input type="file" id="certificate" name="certificate" accept=".pdf,.doc,.docx">
+    </div>
+
+    
+<h1>Availability</h1>
+<div class="form-group">
+      <label for="field5">Start Date</label>
+      <input type="text" id="field5" name="field5" required>
+    </div>
+<div class="form-group">
+      <label for="field13">Preferred Work Schedule</label>
+      <input type="text" id="field13" name="field13" required>
+    </div>
+<div class="form-group">
+      <label for="field17">Willingness to Relocate</label>
+      <input type="text" id="field17" name="field17" required>
+    </div>
+<h1>References</h1>
+<div class="form-group">
+      <label for="field18">Reference Name</label>
+      <input type="text" id="field18" name="field18" required>
+    </div>
+<div class="form-group">
+      <label for="field19">Reference Contact Information</label>
+      <input type="text" id="field19" name="field19" required>
+    </div>
+<div class="form-group">
+      <label for="field20">Relationship to Applicant</label>
+      <input type="text" id="field20" name="field20" required>
+    </div>
+<div class="form-group">
+      <label for="field21">Why do you want to work for this company?</label>
+      <input type="text" id="field21" name="field21" required>
+    </div>
+<div class="form-group" style="text-align: center;">
+      <button type="submit">Submit</button>
+    </div>
+<div class="form-group">
+      <label for="agreeTerms">
+        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+        I agree to the terms and conditions
+      </label>
+    </div>
+  </form>
+
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>First Name</th>
+<th>Last Name</th>
+<th>Phone Number</th>
+<th>Email</th>
+
+<th>Street</th>
+<th>Zip code</th>
+<th>Highest Level of Education Attained</th>
+<th>Name of School/University</th>
+
+<th>Major/Area of Study</th>
+<th>Graduation Year</th>
+
+<th>Company Name</th>
+<th>Employment Date</th>
+<th>Job Responsibilities</th>
+<th>start date</th>
+<th>Preferred Work Schedule</th>
+<th>Willingness to Relocate</th>
+<th>Reference Name</th>
+<th>Reference Contact Information</th>
+<th>Relationship to Applicant</th>
+<th>Why do you want to work for this company?</th>
+
+      </tr>
+    </thead>
+    <tbody id="dataBody">
+    </tbody>
+  </table>
+
+  <script>
+    document.getElementById('dataForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Get form values
+      var field1Value = document.getElementById('field1').value;
+      var field2Value = document.getElementById('field2').value;
+      var field3Value = document.getElementById('field3').value;
+      var field4Value = document.getElementById('field4').value;
+      var field5Value = document.getElementById('field5').value;
+var field6Value = document.getElementById('field6').value;
+var field7Value = document.getElementById('field7').value;
+var field8Value = document.getElementById('field8').value;
+var field9Value = document.getElementById('field9').value;
+var field10Value = document.getElementById('field10').value;
+var field11Value = document.getElementById('field11').value;
+
+var field13Value = document.getElementById('field13').value;
+var field14Value = document.getElementById('field14').value;
+var field15Value = document.getElementById('field15').value;
+var field16Value = document.getElementById('field16').value;
+var field18Value = document.getElementById('field18').value;
+var field19Value = document.getElementById('field19').value;
+var field20Value = document.getElementById('field20').value;
+var field21Value = document.getElementById('field21').value;
+
+      var coverLetterValue = document.getElementById('coverLetter').value;
+
+      // Create a new row in the table
+      var tableBody = document.getElementById('dataBody');
+      var newRow = tableBody.insertRow();
+
+      // Insert data into the row
+      var cell1 = newRow.insertCell(0);
+      var cell2 = newRow.insertCell(1);
+      var cell3 = newRow.insertCell(2);
+      var cell4 = newRow.insertCell(3);
+      var cell5 = newRow.insertCell(4);
+var cell6 = newRow.insertCell(5);
+
+var cell7 = newRow.insertCell(6);
+var cell8 = newRow.insertCell(7);
+var cell9 = newRow.insertCell(8);
+var cell10 = newRow.insertCell(9);
+var cell11 = newRow.insertCell(10);
+var cell12 = newRow.insertCell(11);
+var cell13 = newRow.insertCell(12);
+var cell14 = newRow.insertCell(13);
+var cell15 = newRow.insertCell(14);
+var cell16 = newRow.insertCell(15);
+var cell17 = newRow.insertCell(16);
+var cell18 = newRow.insertCell(17);
+var cell19 = newRow.insertCell(18);
+var cell20 = newRow.insertCell(19);
+var cell21 = newRow.insertCell(20);
+
+
+      cell1.textContent = field1Value;
+      cell2.textContent = field2Value;
+      cell3.textContent = field3Value;
+      cell4.textContent = field4Value;
+      cell5.textContent = field5Value;
+cell6.textContent = field6Value;
+cell7.textContent = field7Value;
+cell8.textContent = field8Value;
+cell9.textContent = field9Value;
+cell10.textContent = field10Value;
+cell11.textContent = field11Value;
+cell12.textContent = field12Value;
+cell13.textContent = field13Value;
+cell14.textContent = field14Value;
+cell15.textContent = field15Value;
+cell16.textContent = field16Value;
+
+cell17.textContent = field17Value;
+cell18.textContent = field18Value;
+cell19.textContent = field19Value;
+cell20.textContent = field20Value;
+cell21.textContent = field21Value;
+
+      // Clear form fields after submission
+      //document.getElementById('dataForm').reset();
+    });
+document.getElementById('myForm').addEventListener('submit', function(event) {
+      if (!document.getElementById('agreeTerms').checked) {
+        alert('Please agree to the terms and conditions');
+        event.preventDefault(); // Prevent form submission
+      }
+    });
+  </script>
+</body>
+</html>

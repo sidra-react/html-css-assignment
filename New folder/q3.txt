@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Data Display</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Job Application Form</h1>
+  <form id="dataForm">
+    <h1>Personal Information</h1>
+     <div class="form-group">
+      <label for="field1">First Name:</label>
+      <input type="text" id="field1" name="field1" required>
+    </div>
+    <div class="form-group">
+      <label for="field2">Last Name:</label>
+      <input type="text" id="field2" name="field2" required>
+    </div>
+    <div class="form-group">
+      <label for="field3">Phone Number:</label>
+      <input type="text" id="field3" name="field3" required>
+    </div>
+    <div class="form-group">
+      <label for="field4">email:</label>
+      <input type="text" id="field4" name="field4" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+    </div>
+    <div class="form-group">
+      <label for="coverLetter">Cover Letter:</label>
+      <textarea id="coverLetter" name="coverLetter" rows="4" required></textarea>
+    </div>
+ <div class="form-group">
+      <label for="field6">Street:</label>
+      <input type="text" id="field6" name="field6" required>
+    </div>
+<div class="form-group">
+      <label for="field7">Zip code:</label>
+      <input type="text" id="field7" name="field7" required>
+    </div>
+<h1>Education History</h1>
+<div class="form-group">
+      <label for="field8">Highest Level of Education Attained:</label>
+      <input type="text" id="field8" name="field8" required>
+    </div>
+<div class="form-group">
+      <label for="field9">Name of School/University:</label>
+      <input type="text" id="field9" name="field9" required>
+    </div>
+<div class="form-group">
+      <label for="field10">Major/Area of Study:</label>
+      <input type="text" id="field10" name="field10" required>
+    </div>
+<div class="form-group">
+      <label for="field11">Graduation Year:</label>
+      <input type="text" id="field11" name="field11" required>
+    </div>
+
+
+<div class="form-group">
+      <label for="field14">Company Name:</label>
+      <input type="text" id="field14" name="field14" required>
+    </div>
+<div class="form-group">
+      <label for="field15">Employment Date:</label>
+      <input type="text" id="field15" name="field15" required>
+    </div>
+<div class="form-group">
+      <label for="field16">job responsibilities:</label>
+      <input type="text" id="field16" name="field16" required>
+    </div>
+ <div class="form-group">
+      <label for="certificate">Upload certificates:</label>
+      <input type="file" id="certificate" name="certificate" accept=".pdf,.doc,.docx">
+    </div>
+
+    
+<h1>Availability</h1>
+<div class="form-group">
+      <label for="field5">Start Date</label>
+      <input type="text" id="field5" name="field5" required>
+    </div>
+<div class="form-group">
+      <label for="field13">Preferred Work Schedule</label>
+      <input type="text" id="field13" name="field13" required>
+    </div>
+<div class="form-group">
+      <label for="field17">Willingness to Relocate</label>
+      <input type="text" id="field17" name="field17" required>
+    </div>
+<h1>References</h1>
+<div class="form-group">
+      <label for="field18">Reference Name</label>
+      <input type="text" id="field18" name="field18" required>
+    </div>
+<div class="form-group">
+      <label for="field19">Reference Contact Information</label>
+      <input type="text" id="field19" name="field19" required>
+    </div>
+<div class="form-group">
+      <label for="field20">Relationship to Applicant</label>
+      <input type="text" id="field20" name="field20" required>
+    </div>
+<div class="form-group">
+      <label for="field21">Why do you want to work for this company?</label>
+      <input type="text" id="field21" name="field21" required>
+    </div>
+<div class="form-group" style="text-align: center;">
+      <button type="submit">Submit</button>
+    </div>
+<div class="form-group">
+      <label for="agreeTerms">
+        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+        I agree to the terms and conditions
+      </label>
+    </div>
+  </form>
+
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>First Name</th>
+<th>Last Name</th>
+<th>Phone Number</th>
+<th>Email</th>
+
+<th>Street</th>
+<th>Zip code</th>
+<th>Highest Level of Education Attained</th>
+<th>Name of School/University</th>
+
+<th>Major/Area of Study</th>
+<th>Graduation Year</th>
+
+<th>Company Name</th>
+<th>Employment Date</th>
+<th>Job Responsibilities</th>
+<th>start date</th>
+<th>Preferred Work Schedule</th>
+<th>Willingness to Relocate</th>
+<th>Reference Name</th>
+<th>Reference Contact Information</th>
+<th>Relationship to Applicant</th>
+<th>Why do you want to work for this company?</th>
+
+      </tr>
+    </thead>
+    <tbody id="dataBody">
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

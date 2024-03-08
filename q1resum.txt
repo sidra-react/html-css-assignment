@@ -1,0 +1,49 @@
+// Resume.js
+import React from 'react';
+import './App.css';
+
+function Resume() {
+  return (
+    <div className="resume">
+      <div className="profile">
+        <h1>Sidra noor</h1>
+        <p>Email: Sidranoor2802@gmail.com</p>
+        <img src="data:image/jpeg;base64,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" alt="Your Photo" />
+      </div>
+      <div className="section education">
+        <h2>Education</h2>
+        <p>Your Education Details</p>
+      </div>
+      <div className="section experience">
+        <h2>Work Experience</h2>
+        <p>Your Work Experience Details</p>
+      </div>
+      <div className="section skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Skill 1</li>
+          <li>Skill 2</li>
+          <li>Skill 3</li>
+        </ul>
+      </div>
+      <div className="section projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>Project 1</li>
+          <li>Project 2</li>
+          <li>Project 3</li>
+        </ul>
+      </div>
+      <div className="section projects">
+        <h2>Experience</h2>
+        <ul>
+          <li>Project 1</li>
+          <li>Project 2</li>
+          <li>Project 3</li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default Resume;

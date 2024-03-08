@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Gradient</title>
+  <style>
+    .container{
+      display: flex;
+      height: 500%;
+      background: linear-gradient(
+        to right,
+        #7953cd 20%,
+        #00affa 30%,
+        #0190cd 70%,
+        #764ada 80%
+      );
+      background-size: 500% auto;
+      animation: animatedGradient 2s ease-in-out infinite;
+      animation-play-state: running;
+    }
+
+    .container:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes animatedGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+ <div class="resume-wrapper">
+  <section class="profile section-padding">
+    <div class="container">
+      <div class="picture-resume-wrapper">
+        <div class="picture-resume">
+          <div class="circle-1"></div>
+          <div class="circle-2"></div>
+          <img src="https://avatars1.githubusercontent.com/u/11138613?s=400&u=38ad6c8461f69a2d9f0065d8fcb07f82866c5771&v=4" alt=""/>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="name-wrapper">
+        <h1>Deepankar <br/>Kotnala</h1>
+      </div>
+      <div class="clearfix"></div>
+      <div class="contact-info clearfix">
+        <ul class="list-titles" style="list-style: none">
+          <li>Call </li>
+          <li>Mail </li>
+          <li>Home </li>
+          <li>GitHub </li>
+          <li>LinkedIn </li>
+        </ul>
+        <ul class="list-content" style="list-style: none; padding-left: 0;">
+          <li><a href="tel:970-697-6091">+91 845 498 3402</a></li>
+          <li><a href="mailto:kyle.hagad@gmail.com?subject=Following up from Résumé">dkotnala5@gmail.com</a></li>
+          <li>Bengaluru, India</li>
+          <li><a href="https://github.com/deepankarkotnala">deepankarkotnala</a></li>
+          <li><a href="https://www.linkedin.com/in/deepankarkotnala/">Deepankar Kotnala</a></li>
+        </ul>
+      </div>
+      <div class="contact-presentation">
+        <!-- YOUR PRESENTATION RESUME  -->
+        <p><span class="bold">Education</span> 2013-2015 I attended Colorado Mesa University to study human biology / neurology. </p>
+      </div>
+              <div class="contact-social clearfix">
+        <ul class="list-titles" style="list-style: none">
+          <li>Contacts</li>
+            <li>Daniel Seagraves </li>
+            <li>Susan Berg </li>
+        </ul>
+          <ul class="list-content" style="list-style: none; padding-left: 0;"> <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
+            <li>&nbsp;</li>
+            <li><a href="tel:970-201-0108">(970) 201-0108</a></li>
+            <li><a href="tel:970-640-7270">(970) 640-7270</a></li>
+          </ul>
+        </div>
+    </div>
+  </section>
+
+  <section class="experience section-padding" style="margin-top: -1rem;">
+    <div class="container">
+      <h3 class="experience-title">Experience</h3>
+      <div class="experience-wrapper">
+        <div class="company-wrapper clearfix">
+          <div class="experience-title">La Quinta Inns & Suites</div>
+          <div class="time">3 Years</div>
+        </div>
+        <div class="job-wrapper clearfix">
+          <div class="experience-title">Night Auditor</div>
+          <div class="company-description">
+            <p>Worked alone at night to resolve the previous day's business. Checked guest in and out, resolved any issues gues may have had.</p>
+          </div>
+        </div>
+        <div class="company-wrapper clearfix">
+          <div class="experience-title">Colorado Mesa University</div>
+          <div class="time">3 Years</div>
+        </div>
+        <div class="job-wrapper clearfix">
+          <div class="experience-title">Production Painter</div>
+          <div class="company-description">
+            <p>All interior painting: touch ups, patches, up to repainting entire academic wings & dormitory buildings. Room remodeling including: drywall installation & repair, and wall-paper removal / replacement. Self Management: found & completed work to be done on my own initiative. </p>
+          </div>
+        </div>
+        <div class="company-wrapper clearfix">
+          <div class="experience-title">Stitches by Commission</div>
+          <div class="time">7 Years</div>
+        </div>
+        <div class="job-wrapper clearfix">
+          <div class="experience-title">Sole Propriety & Producer</div>
+          <div class="company-description">
+            <p>Produce unique items by custom order; skirts, dresses, vests, hats, plush animals, et cetra. Produced and marketed said items, making alteration to their core design patterns to optimize usability and ease of sale. Created these in my free time.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-wrapper clearfix">
+        <h3 class="section-title">Skills</h3>
+        <ul style="list-style: none;">
+          <li class="skill-percentage">HTML / HTML5</li>
+          <li class="skill-percentage">CSS / SASS</li>
+          <li class="skill-percentage">Javascript / Node.JS</li>
+          <li class="skill-percentage">Express</li>
+          <li class="skill-percentage">Handlebars.JS</li>
+          <li class="skill-percentage">Bootstrap </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="clearfix"></div>
+</div>
+</body>
+</html>

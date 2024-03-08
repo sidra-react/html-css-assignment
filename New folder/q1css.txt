@@ -1,0 +1,126 @@
+/* Add your CSS styles here */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #2c3e50, #8e44ad);
+  animation: changeColor 3s ease-in-out infinite alternate;
+}
+
+@keyframes changeColor {
+  0% {
+    background: linear-gradient(135deg, #2c3e50, #8e44ad);
+  }
+  50% {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+  }
+  100% {
+    background: linear-gradient(135deg, #9b59b6, #3498db);
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.profile-column {
+  grid-column: 1 / span 1;
+  text-align: center;
+}
+
+.details-column {
+  grid-column: 2 / span 1;
+}
+
+h1, h2, h3 {
+  color: #333;
+  text-transform: uppercase; /* Convert headings to uppercase */
+}
+
+p {
+  color: #666;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+  border: 3px solid #ccc;
+  overflow: hidden;
+}
+
+.contact-details {
+  text-align: left;
+}
+
+.contact-details p {
+color:white;
+  margin: 5px 0;
+}
+
+/* Add animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.skill-set li
+{
+	background:rgba(0,0,0,.75);
+	border-radius:5px;
+	color:#FFF;
+	display:inline-block;
+	list-style:none;
+	margin:15px 15px 0 0;
+	padding:10px;
+	text-align:justify;
+}
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  color: #3498db; /* Highlight name */
+  animation: nameAnimation 2s ease-in-out infinite alternate; /* Add animation to the name */
+}
+
+@keyframes nameAnimation {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); } /* Increase size of name */
+}
+
+h2 {
+  color: #27ae60; /* Highlight headings */
+}
+
+h3 {
+  color: #c0392b; /* Highlight projects and skills */
+}
+
+ul {
+  list-style-type: none; /* Remove bullets from projects */
+}
+ .random-design {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      animation: moveRandom 5s linear infinite alternate, changeColor 10s ease-in-out infinite alternate;
+    }
+
+    @keyframes moveRandom {
+      0% { transform: translate(0, -7); }
+      50% { transform: translate(10px, 10px); }
+      100% { transform: translate(0, 0); }
+    }

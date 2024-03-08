@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidra Noor's Resume</title>
+  <style>
+    /* Add your CSS styles here */
+    /* Add your CSS styles here */
+/* Add your CSS styles here */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #2c3e50, #8e44ad);
+  animation: changeColor 3s ease-in-out infinite alternate;
+}
+
+@keyframes changeColor {
+  0% {
+    background: linear-gradient(135deg, #2c3e50, #8e44ad);
+  }
+  50% {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+  }
+  100% {
+    background: linear-gradient(135deg, #9b59b6, #3498db);
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.profile-column {
+  grid-column: 1 / span 1;
+  text-align: center;
+}
+
+.details-column {
+  grid-column: 2 / span 1;
+}
+
+h1, h2, h3 {
+  color: #333;
+  text-transform: uppercase; /* Convert headings to uppercase */
+}
+
+p {
+  color: #666;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+  border: 3px solid #ccc;
+  overflow: hidden;
+}
+
+.contact-details {
+  text-align: left;
+}
+
+.contact-details p {
+color:white;
+  margin: 5px 0;
+}
+
+/* Add animations */
+/* Add animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/* Add hover effect to highlight skills */
+.skill-set li:hover {
+  background: #3498db;
+}
+
+/* Add hover effect to highlight contact details */
+.name-text p:hover {
+  color: #3498db;
+  transition: color 0.3s ease-in-out;
+}
+/* Add animation to contact details container */
+.contact-container {
+color:white;
+  background-color: dark-blue;
+  border-radius: 10px;
+font-family:cursive;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px; animation: moveRandom 5s linear infinite alternate, changeColor 10s ease-in-out infinite alternate;
+}
+
+/* Apply scale animation on hover */
+
+
+.skill-set li
+{
+	background:rgba(0,0,0,.75);
+	border-radius:5px;
+	color:#FFF;
+	display:inline-block;
+	list-style:none;
+	margin:15px 15px 0 0;
+	padding:10px;
+	text-align:justify;
+}
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Highlight certain elements */
+h1 {
+  color: #3498db; /* Highlight name */
+  animation: nameAnimation 2s ease-in-out infinite alternate; /* Add animation to the name */
+}
+
+@keyframes nameAnimation {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); } /* Increase size of name */
+}
+
+h2 {
+  color: #27ae60; /* Highlight headings */
+}
+
+h3 {
+  color: #c0392b; /* Highlight projects and skills */
+}
+
+ul {
+  list-style-type: none; /* Remove bullets from projects */
+}
+ .random-design {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      animation: moveRandom 5s linear infinite alternate, changeColor 10s ease-in-out infinite alternate;
+    }
+
+    @keyframes moveRandom {
+      0% { transform: translate(0, -7); }
+      50% { transform: translate(10px, 10px); }
+      100% { transform: translate(0, 0); }
+    }
+
+   
+  </style>
+</head>
+<body>
+  <div class="container fadeIn">
+    <div class="profile-column">
+      <img class="profile-img" src="https://via.placeholder.com/150" alt="Sidra Noor's Photo">
+      <h1 class="fadeIn">Sidra Noor</h1> <!-- Name with fade-in animation -->
+<div class="details-column contact-container">     
+ <div class="contact-details">
+        <p>Email: l217706@lhr.nu.edu.pk</p>
+        <p>Phone: +92 123 4567890</p>
+        <p>GitHub: <a href="#">github.com/sidranoor</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/sidranoor</a></p>
+      </div>
+ </div>
+    </div>
+<div class="random-design" style="top: 100px; left: 100px;"></div>
+    <div class="random-design" style="top: 200px; left: 300px;"></div>
+    <div class="details-column">
+      <h2>Education</h2>
+      <p>2019-2021: FSC Pre-Engineering</p>
+      <p>2021-Present: Bachelors in Computer Science</p>
+      <h2>Experience</h2>
+      <p>1. Monodyne - Web Developer (2021-2022)</p>
+      <p>2. Codsoft - Software Engineer (2022-Present)</p>
+      <h2>Skills</h2>
+     <ul class="skill-set">
+          <li>Front-end Development</li>
+          <li>Xamarin</li>
+          <li>CSS3</li>
+          <li>Adobe Photoshop</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JQUERY</li>
+          <li>p=Python</li>
+          <li>Company Branding</li>
+          <li>Responsive Web Design</li>
+        </ul> <h2>Projects</h2>
+       <ul class="skill-set">
+        <li>Car Game</li>
+        <li>Bookstore Management System</li>
+        <li>School Management Website</li>
+        <li>Bubble Shooter Game</li>
+<li>gantt chart generator</li>
+<li>schedule make</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

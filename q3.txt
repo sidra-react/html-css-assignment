@@ -1,0 +1,132 @@
+import React, { useState } from 'react';
+import './App.css';
+
+function App() {
+  const [formData, setFormData] = useState([]);
+  const [inputs, setInputs] = useState({
+    firstName: '',
+    lastName: '',
+    phoneNumber: '',
+    email: '',
+    street: '',
+    city: '',
+    state: '',
+    zipCode: ''
+    // Add other form fields here
+  });
+  const handleEducationChange = (e) => {
+    const { name, value } = e.target;
+    setInputs({
+      ...inputs,
+      education: {
+        ...inputs.education,
+        [name]: value
+      }
+    });
+  };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setInputs({ ...inputs, [name]: value });
+  };
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setInputs({ ...inputs, resume: file });
+  };
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFormData([...formData, inputs]);
+    setInputs({
+      firstName: '',
+      lastName: '',
+      phoneNumber: '',
+      email: '',
+      street: '',
+      city: '',
+      state: '',
+      zipCode: ''
+      // Add other form fields here
+    });
+  };
+
+  const renderApplicationsTable = () => {
+    return (
+      <table>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Street</th>
+            <th>City</th>
+            <th>State</th>
+            <th>ZIP Code</th>
+            {/* Add other table headers here */}
+          </tr>
+        </thead>
+        <tbody>
+          {formData.map((application, index) => (
+            <tr key={index}>
+              <td>{application.firstName}</td>
+              <td>{application.lastName}</td>
+              <td>{application.phoneNumber}</td>
+              <td>{application.email}</td>
+              <td>{application.street}</td>
+              <td>{application.city}</td>
+              <td>{application.state}</td>
+              <td>{application.zipCode}</td>
+              {/* Add other table cells here */}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    );
+  };
+
+  return (
+    <div className="container">
+      <h2>Job Application Form</h2>
+      <form onSubmit={handleSubmit}>
+        {/* Personal Information */}
+        <h3>Personal Information</h3>
+        <div className="form-group">
+          <input type="text" name="firstName" value={inputs.firstName} onChange={handleChange} placeholder="First Name" required />
+          <input type="text" name="lastName" value={inputs.lastName} onChange={handleChange} placeholder="Last Name" required />
+        </div>
+        <div className="form-group">
+          <input type="tel" name="phoneNumber" value={inputs.phoneNumber} onChange={handleChange} placeholder="Phone Number" required />
+          <input type="email" name="email" value={inputs.email} onChange={handleChange} placeholder="Email Address" required />
+        </div>
+        <div className="form-group">
+          <input type="text" name="street" value={inputs.street} onChange={handleChange} placeholder="Street" required />
+          <input type="text" name="city" value={inputs.city} onChange={handleChange} placeholder="City" required />
+          <input type="text" name="state" value={inputs.state} onChange={handleChange} placeholder="State" required />
+          <input type="text" name="zipCode" value={inputs.zipCode} onChange={handleChange} placeholder="ZIP Code" required />
+        </div>
+        
+        <h3>Resume and Cover Letter</h3>
+        <div className="form-group">
+          <label htmlFor="resumeUpload" className="file-upload">
+            <span>Upload Resume</span>
+            <input type="file" id="resumeUpload" name="resume" onChange={handleFileChange} accept=".pdf,.doc,.docx" required />
+          </label>
+        </div>
+        <div className="form-group">
+          <textarea name="coverLetter" value={inputs.coverLetter} onChange={handleChange} placeholder="Cover Letter" required></textarea>
+        </div>
+        {/* Add other form sections here */}
+
+        <button type="submit">Submit Application</button>
+        <br/>
+      </form>
+      <br/>
+      <button onClick={renderApplicationsTable}>View Applications as Table</button>
+      <br/>
+      <div className="applications-table">
+        {renderApplicationsTable()}
+      </div>
+    </div>
+  );
+}
+export default App;

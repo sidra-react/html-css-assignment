@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeoplePerHour-like Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="left-section">
+      <i class="fa fa-smile-o" style="font-size:48px;color:red"></i><h1>People<em>per</em>hour</h1>
+      <div class="logo"></div>
+    </div>
+    <div class="right-section">
+      <div class="search-dropdown">
+        <button class="search-button"><i class="fa fa-search"></i>Search
+          <div class="dropdown-content">
+            <a href="#">Category 1</a>
+            <a href="#">Category 2</a>
+            <a href="#">Category 3</a>
+          </div>
+          <div class="arrow down"></div>
+          <div class="mobile-menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </button>
+      </div>
+      <div class="vertical-line"></div>
+      <div class="login-signup">
+        <a href="#">Login</a> / <a href="#">Sign Up</a>
+      </div>
+      <div class="freelance-button">
+        Freelance?
+      </div>
+    </div>
+  </header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Technology & Programming</a></li>
+      <li><a href="#">Writing & Translation</a></li>
+      <li><a href="#">Design</a></li>
+      <li><a href="#">Digital Marketing</a></li>
+      <li><a href="#">Video, Photo & Image</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Music & Audio</a></li>
+      <li><a href="#">Marketing, Branding & Sales</a></li>
+      <li><a href="#">Social Media</a></li>
+    </ul>
+  </nav>
+  <nav class="navbar-mobile">
+    <ul>
+      <li>
+        <a href="#">Browse Categories</a>
+        <div class="dropdown-content">
+          <a href="#">Category 1</a>
+          <a href="#">Category 2</a>
+          <a href="#">Category 3</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="center-section">
+    <h2 class="bright-ideas">Make Bright Ideas </h2>
+    <h2 class="bright-ideas">Happen </h2>
+    <h2>Access global talent on the freelancer website trusted by </h2>
+    <h2>over 1 million businesses worldwide</h2>
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <button class="search-buttonn"><i class="fa fa-search" style="color: white;"></i></button>
+    </div>
+  </div>
+</body>
+</html>
